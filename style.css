@@ -1,0 +1,163 @@
+/* Custom styles */
+:root {
+    --primary: #3a86ff;
+    --secondary: #8338ec;
+    --dark: #111827; /* bg-gray-900 */
+    --light: #f8f9fa;
+    --gray-light: #9CA3AF; /* text-gray-400 */
+    --gray-dark: #1F2937; /* bg-gray-800 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--gray-light);
+}
+
+/* Loading animation */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.7s ease;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Hide content until loaded */
+.content {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+/* Animate sections on scroll */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Common Section Styles */
+.section-title {
+    @apply text-3xl font-bold text-white mb-4;
+}
+
+.section-underline {
+    @apply w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto;
+}
+
+/* Navigation */
+.nav-link {
+    @apply text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300;
+}
+.nav-link-mobile {
+     @apply text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300;
+}
+
+
+/* Hero Section */
+.gradient-text {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Typewriter effect */
+#typewriter::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+    color: var(--primary);
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.social-icon {
+    @apply w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-xl text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-300 transform hover:scale-110;
+}
+
+/* Experience Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid #374151; /* gray-700 */
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+.timeline-dot {
+    position: absolute;
+    left: -2.6rem;
+    top: 0.3rem;
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 3px solid var(--dark);
+}
+.timeline-date {
+    @apply block text-sm text-gray-500 mb-1 font-mono;
+}
+
+/* Skill Cards */
+.skill-card {
+    @apply bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center text-center transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10;
+}
+.skill-icon {
+    @apply text-4xl mb-3 text-blue-400;
+}
+
+/* Project Cards */
+.project-card {
+    @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10;
+}
+.project-image {
+    @apply w-full h-56 object-cover transition-transform duration-500 hover:scale-105;
+}
+.tech-tag {
+    @apply inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full;
+}
+.project-link {
+    @apply inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors;
+}
+
+/* Achievement Cards */
+.achievement-card {
+    @apply bg-gray-800 p-8 rounded-lg text-center border border-gray-700 transition-all duration-300 hover:border-yellow-400/50 hover:shadow-lg;
+}
+
+/* Footer */
+.social-icon-footer {
+     @apply text-gray-500 hover:text-blue-400 transition-colors text-xl;
+}
