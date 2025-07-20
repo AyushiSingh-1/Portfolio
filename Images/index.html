@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi Singh </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 font-sans text-gray-300">
+
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="content min-h-screen">
+        <nav class="fixed w-full bg-gray-800/80 backdrop-blur-sm shadow-lg z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16 items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="#home" class="text-xl font-bold gradient-text">AYUSHI SINGH</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#about" class="nav-link">About</a>
+                            <a href="#experience" class="nav-link">Experience</a>
+                            <a href="#skills" class="nav-link">Skills</a>
+                            <a href="#projects" class="nav-link">Projects</a>
+                            <a href="#achievements" class="nav-link">Achievements</a>
+                            <a href="#contact" class="nav-link">Contact</a>
+                            <a href="Images\Ayushi_500109714.pdf" target="_blank" class="ml-4 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors">Resume</a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800">
+                    <a href="#about" class="nav-link-mobile">About</a>
+                    <a href="#experience" class="nav-link-mobile">Experience</a>
+                    <a href="#skills" class="nav-link-mobile">Skills</a>
+                    <a href="#projects" class="nav-link-mobile">Projects</a>
+                    <a href="#achievements" class="nav-link-mobile">Achievements</a>
+                    <a href="#contact" class="nav-link-mobile">Contact</a>
+                    <a href="Images\Ayushi_500109714.pdf" target="_blank" class="block px-3 py-2 text-base font-medium text-white bg-blue-600 rounded-md mt-2 text-center">View Resume</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen flex items-center">
+            <div class="hero-content flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 flex justify-center order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-blue-500 to-purple-600 rounded-full opacity-60 blur-xl"></div>
+                        <img src="\Images\Ayushi.jpg" alt="Ayushi Singh" class="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-gray-700 shadow-lg">
+                    </div>
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left order-2 lg:order-1">
+                    <h1 class="text-5xl font-bold mb-4 text-white">Hi, I'm <span class="gradient-text">Ayushi Singh</span></h1>
+                    <h2 class="text-2xl text-blue-300 mb-6 font-mono"><span id="typewriter"></span></h2>
+                    <p class="text-gray-400 mb-8 max-w-lg mx-auto lg:mx-0">B.Tech student specializing in Cyber Security. Passionate about ethical hacking, cloud security, and building secure, scalable systems. Experienced in full-stack development and security-focused projects from IoT to image encryption.</p>
+                    <div class="flex justify-center lg:justify-start space-x-4 mb-8">
+                        <a href="REPLACE_WITH_LINKEDIN_URL" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="REPLACE_WITH_GITHUB_URL" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="REPLACE_WITH_LEETCODE_URL" target="_blank" class="social-icon"><i class="fa fa-code"></i></a>
+                        <a href="REPLACE_WITH_TRYHACKME_URL" target="_blank" class="social-icon"><i class="fa fa-shield-halved"></i></a>
+                    </div>
+                    <a href="#projects" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-md font-medium hover:shadow-lg transition-all transform hover:scale-105">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-lg text-gray-400 mb-6">I'm a cybersecurity enthusiast and developer who enjoys building meaningful and secure tech solutions. From engineering IoT-based security systems to experimenting with encryption models and cloud configurations, I thrive on hands-on learning and problem-solving.</p>
+                <p class="text-lg text-gray-400">When I’m not tackling CTF challenges or writing code, you’ll find me exploring cybersecurity communities, volunteering, or getting inspired by new tech trends.</p>
+            </div>
+        </section>
+        
+        <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-800/50 rounded-xl">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2025 – Present</span>
+                            <h3 class="text-xl font-bold text-white">Cyber Security Intern</h3>
+                            <p class="text-blue-300 font-semibold mb-2">IBM</p>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>Gaining hands-on experience in real-time video analytics and Python-based alert systems.</li>
+                                <li>Exploring cybersecurity governance, policy compliance, and basic audit processes. </li>
+                                <li>Currently exploring AWS integration (SNS, S3) for scalable alert distribution. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">August 2022 – Present</span>
+                            <h3 class="text-xl font-bold text-white">B.Tech, Cyber Security and Forensics</h3>
+                            <p class="text-blue-300 font-semibold mb-2">UPES, Dehradun, IN (CGPA: 7.82)</p>
+                        </div>
+                    </div>
+                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">April 2020 – March 2022</span>
+                            <h3 class="text-xl font-bold text-white">ISC Senior Secondary Education (75.60%)</h3>
+                            <p class="text-blue-300 font-semibold mb-2">St. Mary's Convent Inter College, Prayagraj, IN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div class="skill-card"><i class="fas fa-code skill-icon"></i><p>Java</p></div>
+                <div class="skill-card"><i class="fab fa-python skill-icon"></i><p>Python</p></div>
+                <div class="skill-card"><i class="fab fa-html5 skill-icon"></i><p>HTML</p></div>
+                <div class="skill-card"><i class="fab fa-js-square skill-icon"></i><p>JavaScript</p></div>
+                <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i><p>CSS</p></div>
+                <div class="skill-card"><i class="fab fa-node-js skill-icon"></i><p>Node.js</p></div>
+                <div class="skill-card"><i class="fas fa-server skill-icon"></i><p>Express.js</p></div>
+                <div class="skill-card"><i class="fas fa-database skill-icon"></i><p>MySQL</p></div>
+                <div class="skill-card"><i class="fas fa-leaf skill-icon"></i><p>MongoDB</p></div>
+                <div class="skill-card"><i class="fas fa-shield-alt skill-icon"></i><p>Metasploit</p></div>
+                <div class="skill-card"><i class="fas fa-search skill-icon"></i><p>Nmap</p></div>
+                <div class="skill-card"><i class="fas fa-network-wired skill-icon"></i><p>Wireshark</p></div>
+                <div class="skill-card"><i class="fab fa-aws skill-icon"></i><p>AWS</p></div>
+                <div class="skill-card"><i class="fas fa-tasks skill-icon"></i><p>Risk Assessment</p></div>
+                <div class="skill-card"><i class="fas fa-clipboard-check skill-icon"></i><p>Audit Understanding</p></div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-800/50 rounded-xl">
+            <div class="text-center mb-16">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <img src="https://i.ibb.co/6yvMyv9/iot-security.png" alt="Smart Perimeter Security System" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Smart Perimeter Security System</h3>
+                        <p class="text-gray-400 mb-4">An IoT-enabled security system with motion-triggered alerts, human detection, and real-time notifications via Telegram. </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">ESP32</span><span class="tech-tag">Python</span><span class="tech-tag">OpenCV</span><span class="tech-tag">PIR Sensor</span>
+                        </div>
+                        <a href="REPLACE_WITH_GITHUB_LINK" class="project-link">View on GitHub <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://i.ibb.co/z5pQ4jD/matchmaking-app.png" alt="SoulSync Matchmaking App" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">SoulSync: Matchmaking Application</h3>
+                        <p class="text-gray-400 mb-4">A cross-platform mobile app for personalized matchmaking based on numerology, featuring a Node.js backend and MongoDB. </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                             <span class="tech-tag">Flutter</span><span class="tech-tag">Java</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="REPLACE_WITH_GITHUB_LINK" class="project-link">View on GitHub <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://i.ibb.co/YhBqCjJ/encryption-tool.png" alt="PixelLock Image Encryption" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">PixelLock: Image Encryption Model</h3>
+                        <p class="text-gray-400 mb-4">An automated AES-based image encryption and decryption program in C. Converts BMP images to grayscale for enhanced visual security. </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">C</span><span class="tech-tag">AES Encryption</span><span class="tech-tag">Image Processing</span>
+                        </div>
+                        <a href="REPLACE_WITH_GITHUB_LINK" class="project-link">View on GitHub <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://i.ibb.co/LQrJg5K/cloud-lab.png" alt="Cloud Security Lab" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Cloud Security Lab</h3>
+                        <p class="text-gray-400 mb-4">A simulated AWS environment for testing S3 bucket misconfigurations and IAM privilege escalation scenarios. </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">AWS</span><span class="tech-tag">IAM</span><span class="tech-tag">S3 Buckets</span><span class="tech-tag">Security Groups</span>
+                        </div>
+                        <a href="REPLACE_WITH_GITHUB_LINK" class="project-link">View on GitHub <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="achievements" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy text-yellow-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">Top 3% on TryHackMe</h3>
+                    <p class="text-gray-400">Achieved by practicing cloud misconfigurations, CTF labs, and red/blue team challenges. </p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-medal text-orange-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">Bronze Medal, IBM ICE 2024</h3>
+                    <p class="text-gray-400">Won for the PixelLock project presentation organized by School of Computer Science, UPES. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 border border-blue-500/30 rounded-2xl p-8 md:p-12 shadow-lg">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
+                    <p class="text-blue-200">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+                </div>
+                <div class="max-w-lg mx-auto text-center">
+                    <a href="mailto:ayushisingh.as5@gmail.com" class="inline-block w-full bg-blue-600 text-white font-medium py-4 px-6 rounded-lg hover:bg-blue-700 transition-colors text-lg shadow-md mb-6">
+                        ayushisingh.as5@gmail.com
+                    </a>
+                    <div class="flex justify-center items-center space-x-6 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-blue-400"></i>
+                            <span>+91 969-683-8281</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-400"></i>
+                            <span>Prayagraj, IN </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+                <p class="text-gray-500 mb-4 sm:mb-0">© 2025 Ayushi Singh. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="REPLACE_WITH_LINKEDIN_URL" target="_blank" class="social-icon-footer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="REPLACE_WITH_GITHUB_URL" target="_blank" class="social-icon-footer"><i class="fab fa-github"></i></a>
+                    <a href="REPLACE_WITH_LEETCODE_URL" target="_blank" class="social-icon-footer"><i class="fa fa-code"></i></a>
+                    <a href="REPLACE_WITH_TRYHACKME_URL" target="_blank" class="social-icon-footer"><i class="fa fa-shield-halved"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
