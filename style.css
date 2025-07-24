@@ -179,7 +179,7 @@ section.animated {
     @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10;
 }
 .project-image {
-    @apply w-full h-40 object-cover transition-transform duration-500 hover:scale-105;
+    @apply w-full h-30 object-cover transition-transform duration-500 hover:scale-105;
 }
 .tech-tag {
     @apply inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full;
