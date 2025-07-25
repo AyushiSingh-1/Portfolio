@@ -189,7 +189,7 @@ section.animated {
 /* The project image/logo itself.
    It scales to fit inside the container without being cropped. */
 .project-image {
-    @apply max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105;
+    @apply max-w-25 max-h-25 object-contain transition-transform duration-500 group-hover:scale-105;
 }
 
 /* Styling for the technology tags */
