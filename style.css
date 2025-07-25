@@ -173,26 +173,31 @@ section.animated {
 .icon-mongo { color: #47a248; }
 .icon-aws { color: #ff9900; }
 
+/* --- Project Cards CSS --- */
 
-/* Project Cards */
+/* The main card container */
 .project-card {
     @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 group;
 }
 
-/* KEY CHANGE IS HERE */
+/* The container that holds the image.
+   It has a fixed height and uses flexbox to center the logo. */
 .project-image-container {
-    /* Replaced h-48 with aspect-square to make it a perfect square */
-    @apply aspect-square bg-white p-6; 
+    @apply h-56 bg-white p-6 flex items-center justify-center;
 }
 
+/* The project image/logo itself.
+   It scales to fit inside the container without being cropped. */
 .project-image {
-    /* The image will fit inside the square container without being cropped */
-    @apply w-full h-full object-contain transition-transform duration-500 group-hover:scale-105;
+    @apply max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105;
 }
 
+/* Styling for the technology tags */
 .tech-tag {
     @apply inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full;
 }
+
+/* Styling for the "View on GitHub" link */
 .project-link {
     @apply inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors;
 }
