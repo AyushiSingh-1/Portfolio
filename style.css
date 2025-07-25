@@ -175,31 +175,28 @@ section.animated {
 
 
 /* Project Cards */
-/* In style.css */
-
-/* Project Cards */
 .project-card {
-    /* STEP 2: Add the "group" class to make the hover effect work on the image */
     @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 group;
 }
 
-/* STEP 3: ADD THIS NEW RULE for the wrapper div */
+/* KEY CHANGE IS HERE */
 .project-image-container {
-    /* This creates the uniform frame: fixed height, white background, and padding */
-    @apply h-48 bg-white p-6; 
+    /* Replaced h-48 with aspect-square to make it a perfect square */
+    @apply aspect-square bg-white p-6; 
 }
 
-/* STEP 4: UPDATE THE .project-image RULE */
 .project-image {
-    /* This now tells the image to fit inside the container without being cropped */
+    /* The image will fit inside the square container without being cropped */
     @apply w-full h-full object-contain transition-transform duration-500 group-hover:scale-105;
 }
+
 .tech-tag {
     @apply inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full;
 }
 .project-link {
     @apply inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors;
 }
+
 
 /* Achievement Cards */
 .achievement-card {
