@@ -178,8 +178,10 @@ section.animated {
 .project-card {
     @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10;
 }
+/* Project Cards */
 .project-image {
-    @apply w-full h-25 w-17 object-cover transition-transform duration-500 hover:scale-105;
+    /* KEY CHANGE: Replaced h-25 w-17 with a fixed height (h-48 = 12rem/192px) */
+    @apply w-full h-48 object-cover transition-transform duration-500 hover:scale-105;
 }
 .tech-tag {
     @apply inline-block bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full;
