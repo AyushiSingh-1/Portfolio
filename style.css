@@ -175,25 +175,26 @@ section.animated {
 
 /* --- Project Cards CSS --- */
 
+/* --- Project Cards CSS --- */
+
 /* The main card container */
 .project-card {
-    @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 group;
+    @apply bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 group flex flex-col items-center;
+    @apply p-4 md:p-6;
 }
 
-/* The container that holds the image.
-   It has a fixed height and uses flexbox to center the logo. */
+/* The container that holds the image. */
 .project-image-container {
-    @apply h-36 bg-white p-2 flex items-center justify-center;
+    @apply h-auto bg-white p-4 flex items-center justify-center;
 }
 
-/* The project image/logo itself.
-   It scales to fit inside the container without being cropped. */
+/* The project image/logo itself. */
 .project-image {
-    @apply object-contain transition-transform duration-500 group-hover:scale-105;
+    @apply object-contain transition-transform duration-500 group-hover:scale-110;
     width: 128px !important;
     height: 128px !important;
+    border-radius: 0.5rem;
 }
-
 
 /* Styling for the technology tags */
 .tech-tag {
@@ -204,7 +205,6 @@ section.animated {
 .project-link {
     @apply inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors;
 }
-
 
 /* Achievement Cards */
 .achievement-card {
