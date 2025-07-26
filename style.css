@@ -190,8 +190,8 @@ section.animated {
    It scales to fit inside the container without being cropped. */
 .project-image {
     @apply object-contain transition-transform duration-500 group-hover:scale-105;
-    width: 64px !important;
-    height: 64px !important;
+    width: 96px !important;
+    height: 96px !important;
 }
 
 
