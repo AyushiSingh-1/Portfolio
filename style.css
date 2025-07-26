@@ -189,8 +189,11 @@ section.animated {
 /* The project image/logo itself.
    It scales to fit inside the container without being cropped. */
 .project-image {
-    @apply w-16 h-16 object-contain transition-transform duration-500 group-hover:scale-105;
+    @apply object-contain transition-transform duration-500 group-hover:scale-105;
+    width: 64px !important;
+    height: 64px !important;
 }
+
 
 /* Styling for the technology tags */
 .tech-tag {
