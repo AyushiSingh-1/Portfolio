@@ -183,7 +183,7 @@ section.animated {
 /* The container that holds the image.
    It has a fixed height and uses flexbox to center the logo. */
 .project-image-container {
-    @apply h-56 bg-white p-6 flex items-center justify-center;
+    @apply h-36 bg-white p-2 flex items-center justify-center;
 }
 
 /* The project image/logo itself.
