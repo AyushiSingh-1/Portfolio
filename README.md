@@ -1,4 +1,4 @@
-**[Lint to my Portfolio](https://ayushisingh-1.github.io/Portfolio/)**
+**[Lint to my Portfolio](https://ayushisingh-1.github.io/)**
 
 
 Ayushi Singh - Cybersecurity Enthusiast & Developer
